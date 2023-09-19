@@ -6,64 +6,63 @@ def openDoor():
     action = input(
         "After providing the password It's time to unlock the door. Choose 'open' to open the door. ").lower()
     if action == "open":
-        print("Congratulations! You opened the door you have found the treasure. ")
+        print("Congratulations! Door opened, you have found the treasure. ")
     else:
         thankyou()
 def findKnowledge(n):
     if n == 1:
-        print("New Year's Day (celebrated nationwide)")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 1:
+        print("Question - New Year's Day (celebrated nationwide)")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "1":
             openDoor()
     elif n == 2:
-        print("New Year's Day (celebrated nationwide)")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 2:
+        print("Question - Which day is National Read Across America Day")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "2":
             openDoor()
     elif n == 3:
-        print("National Boyfriend's Day")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 3:
+        print("Question - Which day is National Boyfriend's Day")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "3":
             openDoor()
     elif n == 4:
-        print("When Mahavir Jayanti is Celebrated")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 4:
+        print("Question - When Mahavir Jayanti is Celebrated")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "4":
             openDoor()
     elif n == 5:
-        print("When Buddha Purnima is Celebrated")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 5:
+        print("Question - When Buddha Purnima is Celebrated")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "5":
             openDoor()
     elif n == 6:
-        print("When was the atomic bomb dropped on the Japanese city of Hiroshima.")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 6:
+        print("Question - When was the atomic bomb dropped on the Japanese city of Hiroshima.")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "6":
             openDoor()
     elif n == 7:
-        print("World Athletics Day")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 7:
+        print("Question - When is World Athletics Day")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "7":
             openDoor()
     elif n == 8:
-        print("World Red Cross Day")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 3:
+        print("Question - When was World Red Cross Day")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "8":
             openDoor()
     elif n == 9:
-        print("Rabindranath Tagore Jayanti")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 9:
+        print("Question - When was Rabindranath Tagore Jayanti Celebrated")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "9":
             openDoor()
     elif n == 10:
-        print("When was Hrithik Roshan Birthday")
-        action = input("Please provide only number input to open the lock").lower()
-        if action == 10:
+        print("Question - When was Hrithik Roshan Birthday")
+        action = input("Answer is provide only date value as input to open the lock ex:1-10 numbers only ").lower()
+        if action == "10":
             openDoor()
 def swimTime():
     print("Press any key for 10 times in 20 seconds to get near the door")
     start_time = time.time()
-    print("start_time ", start_time)
     while len(startlist) <= 9:
         line = input()
         if line:
@@ -73,7 +72,6 @@ def swimTime():
     elapsed_time = time.time() - start_time
     time_limit = 20
     startlist.clear()
-    print("elapsed_time ", elapsed_time)
     if elapsed_time <= time_limit:
         print("Before opening the door identify or guess the last number from the question mentioned?")
         n = random.randrange(1, 10)
@@ -82,14 +80,13 @@ def swimTime():
     else:
         getcave()
 def getcave():
-    print("Now, you have entered the cave Search for the Key ")
+    print("Congrats,now you have entered the cave Search for the Key ")
     print("Searching ...")
     getsleeptime()
     print("Got the Key need to swim to get near the door. ")
     swimTime()
 def findCaveentry():
     start_time = time.time()
-    print("start_time ", start_time)
     while len(startlist) <= 9:
         line = input()
         if line:
@@ -99,7 +96,6 @@ def findCaveentry():
     elapsed_time = time.time() - start_time
     time_limit = 20
     startlist.clear()
-    print("elapsed_time ", elapsed_time)
     if elapsed_time <= time_limit:
         getcave()
     else:
